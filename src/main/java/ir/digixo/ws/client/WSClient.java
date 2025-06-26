@@ -12,7 +12,7 @@ public class WSClient {
 
         HelloWsService service = new HelloWsService(new URL("http://localhost:8080/ws/hello?wsdl"));
         final HelloWs helloWsPort = service.getHelloWsPort();
-        final String s = helloWsPort.hello("Soap Web Service");
+        final String s = helloWsPort.hello("Soap Web Service Called");
         System.out.println(s);
     }
 }
